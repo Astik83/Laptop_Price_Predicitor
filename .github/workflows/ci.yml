@@ -5,6 +5,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: '30 7 * * 2'  # Runs at 7:30 AM UTC every Tuesday
 
 jobs:
   build-and-test:
@@ -31,4 +33,3 @@ jobs:
     - name: 🧹 Run linter with flake8
       run: |
         flake8 .
-
