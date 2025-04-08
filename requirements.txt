@@ -1,5 +1,6 @@
+
+pip
+streamlit
 pandas
+numpy
 scikit-learn
-selenium
-bs4
-webdriver-manager
